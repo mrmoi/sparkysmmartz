@@ -1,9 +1,40 @@
 
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Dosis|Indie+Flower|Philosopher:700|Righteous');
 
 // Variables
 @import "variables";
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Custom CSS //
+
+// Footer
+.customFooter {
+  background-color: $brand-info;
+  text-align: center;
+  border: 1px solid darken($brand-info, 50%);
+  padding-top: 15px;
+  font-size: 1.1em;
+  padding-bottom: 15px;
+}
+
+.customFooter ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.customFooter li {
+  display: inline;
+}
+
+
+
+// Custom Nav
+.navbar-brand {
+  font-family: $font-family-philosopher;
+  font-size: large;
+}
