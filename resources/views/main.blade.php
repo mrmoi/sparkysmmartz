@@ -6,10 +6,8 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Welcome to Sparkys Coffee</div>
-                    <div class="panel-body">
-
-                        <h4>Experience the Difference</h4>
+                    <div class="panel-heading custom_panel_heading">Experience the difference</div>
+                    <div class="panel-body custom_panel_body">
 
                         <img class="pull-left" src="{{ asset('images/cafecounter.jpg') }}" alt="Cafe Counter">
 
