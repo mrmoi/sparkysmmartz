@@ -9,35 +9,37 @@
                     <div class="panel-heading custom_panel_heading">Coffee House Events Schedule</div>
                     <div class="panel-body custom_panel_body">
 
+                        <img src="{{ asset('images/cafeevents.jpg') }}" class="img-responsive">
 
-
-                        <p>Join us on our patio for our Acoustic Nights &amp; Coffee every Thursday and Saturday nights.
+                        <p><strong>Join us</strong> on our patio for our Acoustic Nights &amp; Coffee every Thursday and Saturday nights.
                             We also host trivia nights, spelling bees, and art shows.</p>
 
-                        <table>
-                            <caption>Monthly Events</caption>
+                        <table class="table table-bordered">
+                            <thead class="thead-dark">
                             <tr>
-                                <th>Event</th>
-                                <th>Time</th>
+                                <th scope="col"><strong>Event</strong></th>
+                                <th scope="col"><strong>Time</strong></th>
                             </tr>
+                            </thead>
+                            <tbody>
                             <tr>
-                                <td>Acoustic Nights and Coffee</td>
+                                <th scope="row">Acoustic Nights and Coffee</th>
                                 <td>Thursdays and Saturdays at 7:00pm</td>
                             </tr>
                             <tr>
-                                <td>Spelling Bee Contest</td>
+                                <th scope="row">Spelling Bee Contest</th>
                                 <td>Monday Nights at 7:00pm</td>
                             </tr>
                             <tr>
-                                <td>Trivia Night</td>
+                                <th scope="row">Trivia Night</th>
                                 <td>Wednesday Nights at 7:30pm</td>
                             </tr>
                             <tr>
-                                <td>Art Show</td>
+                                <th scope="row">Art Show</th>
                                 <td>Sunday Mornings at 8:00am</td>
                             </tr>
+                            </tbody>
                         </table>
-
                     </div>
                 </div>
             </div>

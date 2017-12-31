@@ -8375,6 +8375,11 @@ p {
   color: darkred;
 }
 
+.custom_panel_body strong {
+  font-weight: 800;
+  color: darkred;
+}
+
 .custom_panel_body ul {
   font-size: 1.0em;
   font-family: "Raleway", sans-serif;
@@ -8384,7 +8389,7 @@ p {
 }
 
 .custom_panel_body img {
-  padding-right: 20px;
+  padding: 20px;
 }
 
 .custom_jumbotron p {
@@ -8396,13 +8401,13 @@ p {
 .custom_jumbotron h1 {
   font-family: "Spicy Rice", cursive;
   color: #ffefdf;
-  font-size: 3.4em;
-  text-shadow: 3px 2px darkorange;
+  font-size: 3.5em;
+  text-shadow: 3px 3px darkorange;
 }
 
 .custom_jumbotron {
   background: url(/images/coffeebeans.jpg?994da6d27ac34533a7354eb12d1c3a30) no-repeat center center;
-  border: 1px solid #ffd6ac;
+  border: 2px solid #ffd6ac;
   font-family: "Philosopher", sans-serif;
   color: darkred;
   background-size: cover;
