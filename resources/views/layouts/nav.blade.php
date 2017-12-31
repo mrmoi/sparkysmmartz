@@ -23,6 +23,13 @@
                 &nbsp;
             </ul>
 
+            <ul class="nav navbar-nav">
+                <li><a href="{{ route('main') }}">Home</a></li>
+                <li><a href="{{ route('coffee') }}">Coffee</a></li>
+                <li><a href="{{ route('events') }}">Events</a></li>
+                <li><a href="{{ route('contact') }}">Contact</a></li>
+            </ul>
+
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
                 <!-- Authentication Links -->

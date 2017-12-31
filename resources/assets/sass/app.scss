@@ -10,6 +10,23 @@
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
 // Custom CSS //
+body {
+  padding-bottom: 5%;
+}
+
+img {
+  padding-right: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  font-family: $font-family-dosis;
+}
+
+p span {
+  font-weight: 800;
+  color: #000;
+}
 
 // Footer
 .customFooter {
@@ -30,7 +47,6 @@
 .customFooter li {
   display: inline;
 }
-
 
 
 // Custom Nav

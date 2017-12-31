@@ -12,8 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('main');
+})->name('main');
+
+Route::get('/coffee', function () {
+    return view('coffee');
+})->name('coffee');
+
+Route::get('/events', function () {
+    return view('events');
+})->name('events');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
 
 Auth::routes();
 
