@@ -33,5 +33,8 @@ Route::get('/contact', function () {
 
 Auth::routes();
 
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/home/newevent/{id}', 'HomeController@new_event');
+
+Route::post('/post-route', 'HomeController@store_event');
