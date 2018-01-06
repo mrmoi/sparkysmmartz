@@ -32,9 +32,28 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $locations = Location::all();
+        //$locations = Location::all();
+        //return view('home', compact('locations'));
 
-        return view('home', compact('locations'));
+        return view('home');
+
+    }
+
+    public function index2()
+    {
+        //$locations = Location::all();
+        //return view('home', compact('locations'));
+
+        return view('newevent');
+
+    }
+
+    public function index3()
+    {
+        //$locations = Location::all();
+        //return view('home', compact('locations'));
+
+        return view('subhome');
 
     }
 
@@ -43,8 +62,6 @@ class HomeController extends Controller
     public function new_event(Request $request, $id)
     {
         $location_selection = $request->session()->get('key', $id);
-
-        //return $location_selection;
 
         return redirect('home');
 
@@ -75,36 +92,5 @@ class HomeController extends Controller
 
         return redirect('home');
     }
-
-/*    public function store_event()
-    {
-/*        $validator = Validator::make($request->all(), [
-            'event_name' => 'required|unique:posts|max:255',
-            'event_description' => 'required'
-        ]);
-
-        if ($validator->fails()) {
-            return redirect('post-route')
-                ->withErrors($validator)
-                ->withInput();
-        }*/
-
-        //$input = $request->all();
-        //return $input;
-
-        //$event_location_id = $loc_id;
-
-/*        $this->validate($request, [
-            'event_name'        => 'required',
-            'event_description' => 'required',
-            'event_time'        => 'required',
-            'created_by_id'     => 'required'
-        ]);
-
-        Event::create(request(['event_name','event_description','event_time','$event_location_id','created_by_id']));
-
-        return redirect('home');*/
-
-
 
 }

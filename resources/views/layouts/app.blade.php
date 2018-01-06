@@ -18,22 +18,20 @@
 <body>
     <div id="app">
 
-        @include('layouts.nav')
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="jumbotron custom_jumbotron">
-                        <h1>Welcome to Sparky's Coffee!</h1>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
+        <div>
+            @include('layouts.nav')
         </div>
 
+        @guest
+        <div class="jumboclass">
+            @include('layouts.jumbotron')
+        </div>
+        @else
 
-        @yield('content')
-        
+        @endguest
+        <div>
+            @yield('content')
+        </div>
 
     </div>
 

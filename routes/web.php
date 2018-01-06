@@ -11,30 +11,30 @@
 |
 */
 
-Route::get('/', function () {
-    return view('main');
-})->name('main');
+// Customer Facing Routes
 
+Route::get('/', 'MainController@index')->name('main');
 
-Route::get('/coffee', function () {
-    return view('coffee');
-})->name('coffee');
+Route::get('/events', 'EventController@index')->name('events');
 
+Route::get('/coffee', 'CoffeeController@index')->name('coffee');
 
-Route::get('/events', function () {
-    return view('events');
-})->name('events');
+Route::get('/contact', 'ContactController@index')->name('contact');
 
-
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
 
 
 Auth::routes();
 
+
+// Employee Only Routes
+
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/newevent', 'HomeController@index2')->name('newevent');
+
+Route::get('/subhome', 'HomeController@index3')->name('subhome');
 
 Route::get('/home/newevent/{id}', 'HomeController@new_event');
 
 Route::post('/post-route', 'HomeController@store_event');
+

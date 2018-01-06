@@ -22,22 +22,12 @@
                             </tr>
                             </thead>
                             <tbody>
+                            @foreach($events as $event)
                             <tr>
-                                <th scope="row">Acoustic Nights and Coffee</th>
-                                <td>Thursdays and Saturdays at 7:00pm</td>
+                                <th scope="row">{{ $event->event_name }}</th>
+                                <td>{{ $event->event_time }}</td>
                             </tr>
-                            <tr>
-                                <th scope="row">Spelling Bee Contest</th>
-                                <td>Monday Nights at 7:00pm</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Trivia Night</th>
-                                <td>Wednesday Nights at 7:30pm</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Art Show</th>
-                                <td>Sunday Mornings at 8:00am</td>
-                            </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>

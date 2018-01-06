@@ -8351,11 +8351,15 @@ button.close {
 }
 
 body {
-  padding-bottom: 5%;
+  padding-bottom: 70px;
 }
 
 p {
   font-size: 14px;
+}
+
+.jumboclass {
+  margin-bottom: 20px;
 }
 
 .custom_panel_heading {
@@ -8436,5 +8440,24 @@ p {
 .navbar-brand {
   font-family: "Philosopher", sans-serif;
   font-size: large;
+}
+
+.customPill {
+  margin-bottom: 2%;
+  background-color: #ffefdf;
+  border-bottom: 2px solid #ffd6ac;
+  color: darkred;
+}
+
+.carousel .item {
+  max-width: 100%;
+  height: auto;
+}
+
+.carouselCaption {
+  font-family: "Spicy Rice", cursive;
+  font-size: 1.5em;
+  margin-bottom: 5%;
+  text-shadow: 2px 2px darkorange;
 }
 

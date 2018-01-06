@@ -14,11 +14,18 @@
 
 // Custom CSS //
 body {
-  padding-bottom: 5%;
+  padding-bottom: 70px;
 }
 
 p {
   font-size: 14px;
+}
+
+
+// Body Classes
+
+.jumboclass {
+   margin-bottom: 20px;
 }
 
 
@@ -119,4 +126,30 @@ p {
 .navbar-brand {
   font-family: $font-family-philosopher;
   font-size: large;
+}
+
+
+
+.customPill {
+  margin-bottom: 2%;
+  background-color: $body-bg;
+  border-bottom: 2px solid $laravel-border-color;
+  color: $red;
+}
+
+
+
+// Carousel
+
+.carousel .item {
+  //background: url("../images/coffeebeans.jpg") no-repeat center center;
+  max-width: 100%;
+  height: auto;
+}
+
+.carouselCaption {
+  font-family: $font-family-spicy;
+  font-size: 1.5em;
+  margin-bottom: 5%;
+  text-shadow: 2px 2px darkorange;
 }
