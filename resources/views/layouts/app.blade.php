@@ -16,12 +16,10 @@
 
 </head>
 <body>
-    <div id="app">
-
+    <div id="app" class="app">
         <div>
             @include('layouts.nav')
         </div>
-
         @guest
 
         <div class="container">
@@ -40,10 +38,11 @@
         <div>
             @yield('content')
         </div>
-
+        <div class="push"></div>
     </div>
-
+    <div class="footer">
     @include('layouts.footer')
+    </div>
 
     <!-- Scripts -->
     <!-- Latest compiled and minified JavaScript -->

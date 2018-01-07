@@ -14,7 +14,18 @@
 
 // Custom CSS //
 body {
-  padding-bottom: 70px;
+  //padding-bottom: 70px;
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.footer, .push {
+  height: 50px;
 }
 
 p {
@@ -120,6 +131,9 @@ p {
 .customFooter li {
   display: inline;
 }
+
+
+
 
 
 // Custom Nav

@@ -8351,7 +8351,18 @@ button.close {
 }
 
 body {
-  padding-bottom: 70px;
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.footer,
+.push {
+  height: 50px;
 }
 
 p {
