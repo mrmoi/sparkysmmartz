@@ -23,9 +23,17 @@
         </div>
 
         @guest
-        <div class="jumboclass">
-            @include('layouts.jumbotron')
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 hidden-xs">
+                    <div class="jumboclass">
+                        @include('layouts.jumbotron')
+                    </div>
+                </div>
+            </div>
         </div>
+
         @else
 
         @endguest
