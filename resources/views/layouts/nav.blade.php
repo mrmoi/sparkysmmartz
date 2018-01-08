@@ -25,11 +25,11 @@
 
 
             <ul class="nav navbar-nav">
-                <li class="{{ set_active('/') }}"><a href="{{ route('main') }}">Home</a></li>
-                <li class="{{ set_active('coffee') }}"><a href="{{ route('coffee') }}">Coffee</a></li>
-                <li class="{{ set_active('events') }}"><a href="{{ route('events') }}">Events</a></li>
-                <li class="{{ set_active('contact') }}"><a href="{{ route('contact') }}">Contact</a></li>
-                {{--{{ Request::path() }}--}}
+                <li><a href="{{ route('main') }}">Home</a></li>
+                {{--<li class="{{ set_active('coffee') }}"><a href="{{ route('coffee') }}">Coffee</a></li>--}}
+                {{--<li class="{{ set_active('events') }}"><a href="{{ route('events') }}">Events</a></li>--}}
+                {{--<li class="{{ set_active('contact') }}"><a href="{{ route('contact') }}">Contact</a></li>--}}
+                {{ Request::path() }}
             </ul>
 
 
