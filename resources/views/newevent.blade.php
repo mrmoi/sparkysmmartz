@@ -32,22 +32,22 @@
 
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">*Name</label>
-                                <input type="text" class="form-control" name="event_name" id="exampleFormControlInput1" placeholder="Acoustic Nights and Coffee">
+                                <input type="text" class="form-control" name="event_name" id="exampleFormControlInput1" placeholder="Acoustic Nights and Coffee" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">*Description</label>
-                                <input type="text" class="form-control" name="event_description" id="exampleFormControlInput1" placeholder="What the event is about...">
+                                <input type="text" class="form-control" name="event_description" id="exampleFormControlInput1" placeholder="What the event is about..." required>
                             </div>
 
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1">*Event Time</label>
-                                <input type="text" class="form-control" name="event_time" id="exampleFormControlTextarea1" placeholder="Date Time description">
+                                <input type="text" class="form-control" name="event_time" id="exampleFormControlTextarea1" placeholder="Date Time description" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1">*Event Location Id</label>
-                                <input type="text" class="form-control" name="event_location_id" id="exampleFormControlTextarea1" placeholder="Date Time description">
+                                <input type="text" class="form-control" name="event_location_id" id="exampleFormControlTextarea1" placeholder="Date Time description" required>
                             </div>
 
                             {{--       <div class="form-group">
@@ -59,6 +59,9 @@
 
                             <button type="submit" class="btn btn-primary">Send now</button>
                         </form>
+
+                        @include('errors')
+
                     </div>
                 </div>
             </div>

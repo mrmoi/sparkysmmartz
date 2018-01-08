@@ -47,6 +47,7 @@ p {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   color: darkred;
+  text-align: center;
 }
 
 .custom_panel_body p {
@@ -64,7 +65,6 @@ p {
   color: $red;
 }
 
-
 .custom_panel_body ul {
   font-size: 1.0em;
   font-family: "Raleway", sans-serif;
@@ -76,6 +76,8 @@ p {
 .custom_panel_body img {
   padding: 20px;
 }
+
+
 
 
 
@@ -151,6 +153,10 @@ p {
   color: $red;
 }
 
+
+.customThead {
+  background-color: $laravel-border-color;
+}
 
 
 // Carousel

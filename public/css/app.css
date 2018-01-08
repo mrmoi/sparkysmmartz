@@ -8378,6 +8378,7 @@ p {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   color: darkred;
+  text-align: center;
 }
 
 .custom_panel_body p {
@@ -8458,6 +8459,10 @@ p {
   background-color: #ffefdf;
   border-bottom: 2px solid #ffd6ac;
   color: darkred;
+}
+
+.customThead {
+  background-color: #ffd6ac;
 }
 
 .carousel .item {

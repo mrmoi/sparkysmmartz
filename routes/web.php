@@ -21,6 +21,11 @@ Route::get('/coffee', 'CoffeeController@index')->name('coffee');
 
 Route::get('/contact', 'ContactController@index')->name('contact');
 
+Route::post('/post-message', 'ContactController@store_message');
+
+
+// There are no links that go to 'home'
+//Route::get('/home', 'HomeController@index')->name('home');
 
 
 Auth::routes();
@@ -28,13 +33,16 @@ Auth::routes();
 
 // Employee Only Routes
 
-Route::get('/home', 'HomeController@index')->name('home');
+// This should be in the new-event controller
 
-Route::get('/newevent', 'HomeController@index2')->name('newevent');
+//Route::get('/home/newevent/{id}', 'HomeController@new_event');
 
-Route::get('/subhome', 'HomeController@index3')->name('subhome');
+Route::get('/subhome', 'SubHomeController@index')->name('subhome');
 
-Route::get('/home/newevent/{id}', 'HomeController@new_event');
+Route::get('/newevent', 'NewEventController@index')->name('newevent');
 
-Route::post('/post-route', 'HomeController@store_event');
+Route::post('/post-route', 'NewEventController@store_event');
+
+
+
 
