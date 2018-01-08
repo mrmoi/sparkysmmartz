@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-sticky-top">
+<nav class="navbar navbar-default navbar-sticky-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
 
@@ -23,12 +23,16 @@
                 &nbsp;
             </ul>
 
+
             <ul class="nav navbar-nav">
-                <li><a href="{{ route('main') }}">Home</a></li>
-                <li><a href="{{ route('coffee') }}">Coffee</a></li>
-                <li><a href="{{ route('events') }}">Events</a></li>
-                <li><a href="{{ route('contact') }}">Contact</a></li>
+                <li class="{{ set_active('/') }}"><a href="{{ route('main') }}">Home</a></li>
+                <li class="{{ set_active('coffee') }}"><a href="{{ route('coffee') }}">Coffee</a></li>
+                <li class="{{ set_active('events') }}"><a href="{{ route('events') }}">Events</a></li>
+                <li class="{{ set_active('contact') }}"><a href="{{ route('contact') }}">Contact</a></li>
+                {{--{{ Request::path() }}--}}
             </ul>
+
+
 
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">

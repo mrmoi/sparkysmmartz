@@ -8369,6 +8369,11 @@ p {
   font-size: 14px;
 }
 
+.custom_active {
+  font-weight: bold;
+  background: #8eb4cb;
+}
+
 .jumboclass {
   margin-bottom: 20px;
 }

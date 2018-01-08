@@ -33,8 +33,6 @@ Auth::routes();
 
 // Employee Only Routes
 
-// This should be in the new-event controller
-
 //Route::get('/home/newevent/{id}', 'HomeController@new_event');
 
 Route::get('/subhome', 'SubHomeController@index')->name('subhome');

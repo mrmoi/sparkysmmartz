@@ -50,7 +50,7 @@
                                     <tr>
                                         <th scope="row">{{ $location->loc_name }}</th>
                                         <td>{{ $location->loc_address }}</td>
-                                        <td>{{ $location->created_at }}</td>
+                                        <td>{{ $location->created_at->formatLocalized('%A %d %B %Y') }}</td>
                                     </tr>
                                 @endforeach
                                 </tbody>
